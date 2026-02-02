@@ -17,7 +17,14 @@ word_list = ['apple','banana','camel']
 # todo - 2 : 사용자에게 알파벳 하나를 입력하라 요청후 guess 변수에 담아라. .lower로 대문자 방지
 # todo - 3 : guess가 chosen_word의 문자열중 하나가 맞는지 확인하고 정답 /오답 출력하게 하기
 
+
 chosen_word = random.choice(word_list)
 guess = input("아무 알파벳을 입력해라 >>> ").lower()
 check(guess , chosen_word)
 
+# str 데이터에서 반복문 돌리면 문자 하나짜리씩 나온다, 위는 내가 익숙한  for range로 썼다.
+for letter in chosen_word:
+    if letter == guess:
+        print('정답')
+    else :
+        print('정답')

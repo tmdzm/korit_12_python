@@ -136,6 +136,9 @@ class Shape() :
     def draw(self):
         print(f'{self.name}이 생성되었습니다.')
 
+    def area(self): # 로직은 없지만 알아서 오버라이드 가능
+        pass
+
 class Circle(Shape):
     def __init__(self,name,radius):
         super().__init__(name)
